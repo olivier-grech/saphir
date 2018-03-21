@@ -1,0 +1,5 @@
+{
+    "server": "irc.7chan.org",
+	"channels": ["#saphir"],
+	"botName": "Saphir"
+}
