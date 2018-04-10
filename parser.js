@@ -15,6 +15,11 @@ const helpMessage = 'here is some help:\n\
 
 const errorMessage = 'this command is invalid';
 
+/// Parse a Saphir dice expression and return the result.
+/// The dice expression will look something like this, for example:
+/// repeat#subcommand+subcommand-flat
+/// Each of the elements of the dice expression will be validated using the 
+/// corresponding regex
 exports.parse = function parse(formula) {   
     var resultTotal;
     var resultString = '';
