@@ -1,6 +1,4 @@
-/*------------------------------------------------------------------------------
-| SAPHIR DICE PARSER                                                           |
-------------------------------------------------------------------------------*/
+/// Saphir dice parser.
 
 // Match something like 3d6h2
 const subcommandRegex = /^(\+|-)([1-9]|[1-9]\d)(d)([1-9]\d{3}|[1-9]\d{2}|[1-9]\d|[1-9])((l|h)([1-9]|[1-9]\d))?$/;
@@ -100,8 +98,7 @@ function splitOnSharp(formula) {
 
     if (sharpIndex == -1) {
         return ['1', formula];
-    }
-    else {
+    } else {
         var formulaRepeat = formula.substring(0, sharpIndex);
         var formulaCommand = formula.substring(sharpIndex + 1, formula.lenght);
         return [formulaRepeat, formulaCommand];
@@ -151,8 +148,7 @@ function evaluateSubcommand(subcommand) {
     
     if (unsignedSubcommand.indexOf('h') != -1) {
         keepHighest = numbers[4];
-    }
-    else if (unsignedSubcommand.indexOf('l') != -1) {
+    } else if (unsignedSubcommand.indexOf('l') != -1) {
         keepLowest = numbers[4];
     }
 
