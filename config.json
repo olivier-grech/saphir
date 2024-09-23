@@ -1,5 +1,5 @@
 {
-    "server": "irc.freenode.org",
-	"channels": ["#sahpir"],
-	"botName": "Saphir"
+  "server": "irc.freenode.org",
+  "channels": ["#saphir"],
+  "botName": "Saphir"
 }
